@@ -20,8 +20,5 @@ describe('Correctly working with primitives', () => {
       act(() => { result.current.setValue(7); })
       expect(result.current.value).toBe(7);
       expect(result.current.prevValue).toBe(1);
-      act(() => { result.current.setValue(44); })
-      expect(result.current.value).toBe(44);
-      expect(result.current.prevValue).toBe(7);
   });
 });
